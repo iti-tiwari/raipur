@@ -17,9 +17,9 @@
     --border:     rgba(11,11,11,0.10);
     --hairline:   rgba(11,11,11,0.08);
 
-    --rd-0: #2a78d6; /* N K Kusumgar and Co — circle */
+    --rd-0: #2a78d6; /* primary RD — circle */
     --rd-1: #e87ba4; /* Siddhivinayak Agencies — square */
-    --rd-2: #eda100; /* Alba Traders — triangle */
+    --rd-2: #eda100; /* tertiary RD — triangle */
     --rd-3: #008300; /* Rajesh Sales Agency — diamond */
     --rd-4: #52514e; /* Vanshita Enterprises — star (neutral, shape-led) */
 
@@ -341,13 +341,7 @@
   const POINTS = raw.points; // [rdIdx, lat, lon, hygIdx, terrIdx, name, outletCode]
   const HEAD_POINTS = raw.heads || []; // [rdIdx, lat, lon, hygIdx, terrIdx, name, consigneeCode, isHead]
 
-  const RD_SHORT = [
-    "N K Kusumgar & Co",
-    "Siddhivinayak Agencies",
-    "Alba Traders",
-    "Rajesh Sales Agency",
-    "Vanshita Enterprises"
-  ];
+  const RD_SHORT = RD_NAMES;
   const RD_COLOR_VAR = ["--rd-0","--rd-1","--rd-2","--rd-3","--rd-4"];
   const RD_SHAPE = ["circle","square","triangle","diamond","star"];
   const HYG_COLOR = { 0: "--good", 1: "--warning", 2: "--critical" };
