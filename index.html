@@ -325,7 +325,7 @@
   </div>
 
   <footer class="note">
-    <strong>606 outlets</strong> from the source sheet have no recorded coordinates and are excluded from this map (mostly N K Kusumgar &amp; Co and Alba Traders territory). Streets and imagery are © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, loaded live — this file needs an internet connection to render the basemap. Drag to pan, scroll or use +/− to zoom, click a legend chip to isolate a territory.
+    <strong>930 outlets</strong> are excluded by the source sheet's coordinate-availability flag. Streets and imagery are © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, loaded live — this file needs an internet connection to render the basemap. Drag to pan, scroll or use +/− to zoom, click a legend chip to isolate a territory.
   </footer>
 </div>
 
@@ -368,7 +368,7 @@
     if (p[2] < minLon) minLon = p[2];
     if (p[2] > maxLon) maxLon = p[2];
   }
-  const EXCLUDED = 0;
+  const EXCLUDED = 930;
 
   // ---------- stat tiles ----------
   const statsEl = document.getElementById('stats');
@@ -724,4 +724,3 @@
 </script>
 </body>
 </html>
-
